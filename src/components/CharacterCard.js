@@ -2,23 +2,39 @@ import React from "react";
 import {NavLink} from 'react-router-dom';
 import { Card, Image, Icon } from 'semantic-ui-react';
 export default function CharacterCard( {character} ) {
-  return (<Card>
-  <image src={character.image}/>
-    <Card.Content>
+  return (
+    <Card>
+
+      <Image src={character.image}/>
+
+  <Card.Content>
+
       <Card.Header>{character.name}</Card.Header>
-      <Card.Meta>
+
+    <Card.Meta>
         <span>{character.species} {character.status}</span>
       </Card.Meta>
+
       <Card.Description>
-        Location: {character.location.name}<br/>
+        Location: {character.location.name}
+        <br/>
         Origin: {character.origin.name}
       </Card.Description>
+
     </Card.Content>
+
     <Card.Content extra>
+
         <NavLink to='/episode'>
+
           <Icon name='video' />
-          {character.episode.length} Episode{character.episode.length > 1 && 's'}
+
+        {character.episode.length} Episode{character.episode.length > 1 && 's'}
+
         </NavLink>
+
     </Card.Content>
-  </Card>)
+
+  </Card>
+)
 }

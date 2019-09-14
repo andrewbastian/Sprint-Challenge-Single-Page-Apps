@@ -26,10 +26,17 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Explain benefit(s) using `client-side routing`?
 > Answer:
+Client side routing loads all of our data at once onto a single page. This makes load times on the page much faster after the 1st page load
+
+
 - [ ] What does AJAX stand for?
 > Answer:
+Asynchronous JavaScript and XML
+
+
 - [ ] What are `controlled components` in React?
 > Answer:
+an input form element whose state is set to a single source of truth, this component renders a form that controls the action of subsequent user inputs.
 
 
 ## Project Set Up
